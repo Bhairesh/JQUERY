@@ -1,0 +1,17 @@
+/* .super {
+    font-size: 100px;
+} */
+
+.colorFull {
+    color: royalblue;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+.cool{
+    font-size: 100px;
+    color: green;
+}

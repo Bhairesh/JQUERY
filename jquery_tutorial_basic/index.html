@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <h1>Exercise 1</h1>
+  <div>
+    <!-- <p> Click on me</p>
+    <p id="super"> Fade me too</p>
+    <h4 class="super"> and also me</h4> -->
+
+    <input type="button" class="btn" value="Click"> <br>
+    <input type="button" class="btn2" value="Change"> <br>
+
+    <!-- <p class="stmt"> This is paragraph statement.....</p>
+    <input type="button" class="btn2" value="I won't"> -->
+
+    <!-- <a href="#" class="a">Click here</a> -->
+    <!-- <div class="box">
+      <p>some data in paragraph</p>
+    </div> -->
+
+    <h2 id="chngTxt">Click to Change text to somethinig else..!!</h2>
+
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/fadeout.js"></script>
+
+  <script>
+    // $(".super, #super").addClass("colorFull");
+    // $(".btn2").toggle();
+
+    // $('.btn').on("click", () => {
+    //   $('.stmt').hide();
+    //   $(".btn").hide();
+    //   $(".btn2").show();
+    // })
+
+    // $(".btn2").on("click", () => {
+    //   $('.stmt').show();
+    //   $(".btn").show();
+    //   $(".btn2").hide();
+    // });
+
+    // $('.box').on("mouseenter", () => {
+    //   $('.box').hide();
+    // });
+
+    // $('.box').on("mouseleave", () => {
+    //   $('.box').show();
+    // });
+
+    // $('.btn').on("click", () => {
+
+    //   // $('.box').slideUp(2000);
+    //   // $('.box').slideDown(2000);
+    //   //  $('.box').slideToggle(2000);
+    //   // $('.box').fadeOut();
+    //   // $('.box').fadeIn();
+    //   $('.box').toggle(2000);
+    // });
+
+    $(".btn").on('click', () => {
+      $("#chngTxt").text("This is the new replaced text..");
+      // let txt = $("#chngTxt").text();
+      // alert(txt);
+      $(".btn").val("Double CLick");
+    });
+
+    $(".btn").on('dblclick', () => {
+      $("#chngTxt").text("Click to Change text to somethinig else..!!");
+      $(".btn").val("Click");
+    });
+
+    $(".btn2").on('click', () => {
+     $("#chngTxt").html("<b class='cool'>New Html tag...</b>");
+    });
+
+    
+
+  </script>
+</body>
+
+</html>
